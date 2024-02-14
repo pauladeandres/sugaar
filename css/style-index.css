@@ -128,6 +128,11 @@ body {
     z-index: 100;
     height: 40px;
 }
+
+.header--logo--container .header--logo.dark {
+    display: none;
+}
+
 .header--container .current_page_item a {
     text-decoration: underline;
     text-underline-offset: 1px;
@@ -913,4 +918,19 @@ footer {
 
 #modal-wrapper {
     background-color: transparent;
+}
+
+body.theme-dark .header--container.desktop,
+body.theme-dark .header--container.desktop a,
+body.theme-dark .hero__content,
+body.theme-dark .hero__content a,
+body.theme-dark .hero-slider-arrow {
+    color: #000;
+}
+
+body.theme-dark .header--logo--container .header--logo:not(.dark) {
+    display: none;
+}
+body.theme-dark .header--logo--container .header--logo.dark {
+    display: block;
 }
